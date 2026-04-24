@@ -1,0 +1,29 @@
+{
+  "name": "htb_next_viewer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"auth,next\" -c \"cyan,green\" \"${AUTH_PYTHON:-python3} -u auth_server.py\" \"next dev\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "fuzzysort": "^3.1.0",
+    "lucide-react": "^0.575.0",
+    "next": "16.1.6",
+    "playwright": "^1.59.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-markdown": "^10.1.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "concurrently": "^9.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4"
+  }
+}

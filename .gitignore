@@ -1,0 +1,38 @@
+# Données téléchargées
+data/
+
+# Runtime / secrets (contenu ignoré, dossier tracké via .gitkeep)
+runtime/*
+!runtime/.gitkeep
+
+# Secrets & cache à la racine
+cookies.json
+path_modules_cache.json
+
+# Dossier backup local
+_backup/
+
+# Next.js
+htb_next_viewer/.next/
+htb_next_viewer/node_modules/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/venv/
+**/*.egg-info/
+
+# Build artifacts (old downloader)
+old_htb_accademy_downloader_gui/build/
+htb_accademy_downloader_gui/build/
+
+# Binaires compilés Go
+**/htb-academy-to-md
+
+# HTML exporté
+.html/
+
+# Logs
+**/*.log
+**/log_*.txt
